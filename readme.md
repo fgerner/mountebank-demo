@@ -17,12 +17,12 @@ This demo will allow to stand up a simple application then record some tests and
 
 ### running the app
 
-1.   without installing __nodeJS__ and using __docker__
+1.   without installing __nodeJS__ and using __docker-compose__
 
-*   build the image:
+```docker-compose up --build```
 
-```docker build -t mountebank-demo-img .```
+2.  if you don't have/want to use docker and have __nodeJS__ installed:
 
-*   run the image:
-
-```docker run --rm -it -p 8124:8124 --name mountebank-demo-cnr mountebank-demo-img```
+*   Start the form application:
+    *   Navigate to the ./form directory
+    *   run: ```node server.js```
