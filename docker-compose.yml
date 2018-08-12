@@ -5,3 +5,7 @@ services:
     build: ./form
     ports: 
       - "8124:8124"
+  api:
+    build: ./api
+    ports:
+      - "8125:8125"

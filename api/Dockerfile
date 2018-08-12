@@ -4,6 +4,6 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-EXPOSE 8124
+EXPOSE 8125
 
-CMD [ "node", "server.js" ]
+CMD [ "node", "api.js" ]

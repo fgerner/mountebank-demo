@@ -26,3 +26,7 @@ This demo will allow to stand up a simple application then record some tests and
 *   Start the form application:
     *   Navigate to the ./form directory
     *   run: ```node server.js```
+
+*   Start the api application:
+    *   Navigate to the ./api directory
+    *   run: ```node api.js```
