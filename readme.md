@@ -29,30 +29,9 @@ info: [mb:2525] mountebank v1.14.1 now taking orders - point your browser to htt
 ````
 
 #### Installing Stubby4J (optional)
-*   Follow the instructions from their github repo:    https://github.com/azagniotov/stubby4j#quick-start-example. Download the jar file and create a simple .yml file with the following contents (i.e. hello-world-config.yml):
-````yml
--  request:
-      method: GET
-      url: /hello-world
- 
-   response:
-      status: 200
-      headers:
-         content-type: application/json
-      body: Hello World!
+*   source at: https://github.com/azagniotov/stubby4j.
+*   navigate to the stubby4j directory of this repo and run the following command:
 
--  request:
-      method: POST
-      url: /create-customer
-
-   response:
-      status: 200
-      headers:
-         content-type: application/json
-      body: >
-         { "ok": "Customer created" }
-````
-Then run the app like so:
 ````bash
 $ java -jar stubby4j-6.0.1.jar -d hello-world-config.yml
 ````
