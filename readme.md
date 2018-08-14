@@ -39,6 +39,11 @@ Your endpoints are:
 *   GET: http://localhost:8882/hello-world
 *   POST: http://localhost:8882/create-customer
 
+#### Installing Postman
+You can install it as a chrome app, but they advice that this method will be deprecated in the near future, so it would be recommended to install natively.
+*   chrome app: [chrome web app](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) 
+*   native app: https://www.getpostman.com/apps
+
 ### Contents
 
 *   server.js: __nodeJS__ server that presents a local form , taken from: https://stackoverflow.com/questions/15427220/how-to-handle-post-request-in-node-js#19183959
