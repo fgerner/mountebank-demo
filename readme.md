@@ -9,7 +9,7 @@ Mountebank is an open source tool that allows to run multi-protocol test doubles
 This demo will allow to stand up a simple application then record some tests and replay them with mountebank.
 
 Read this article for instructions on how to use this repo with Mountebank: https://medium.com/p/9f252b7b4a7a/
-(locally: [article]("./blog-post.md"))
+(locally: [article](blog-post.md))
 
 ### Installing pre-requisites
 
