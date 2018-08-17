@@ -8,7 +8,7 @@ Mountebank is an open source tool that allows to run multi-protocol test doubles
 
 This demo will allow to stand up a simple application then record some tests and replay them with mountebank.
 
-Also there will be mention of possible alternatives and how does Mountebank stacks against them.
+Read this article for instructions on how to use this repo with Mountebank: https://medium.com/p/9f252b7b4a7a/
 
 ### Installing pre-requisites
 
@@ -46,7 +46,11 @@ You can install it as a chrome app, but they advice that this method will be dep
 
 ### Contents
 
-*   server.js: __nodeJS__ server that presents a local form , taken from: https://stackoverflow.com/questions/15427220/how-to-handle-post-request-in-node-js#19183959
+*   form/server.js: __nodeJS__ server that presents a local form , taken from: https://stackoverflow.com/questions/15427220/how-to-handle-post-request-in-node-js#19183959
+
+* api/api.js: also a simpler nodeJS set of endpoints to allow interactions to practice with Mountebank.
+    * GET endpoint: /api/customers
+    * POST endpoint: /api/create-customer
 
 *   Dockerfile: image to run server.js in [Docker](https://www.docker.com/)
 
@@ -71,3 +75,4 @@ You can install it as a chrome app, but they advice that this method will be dep
 ## References
 
 *   Martin Fowler, Mocks Aren't Stubs https://martinfowler.com/articles/mocksArentStubs.html
+*   Medium article: https://medium.com/p/9f252b7b4a7a/

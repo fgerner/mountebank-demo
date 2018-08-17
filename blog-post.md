@@ -1,6 +1,10 @@
+Medium link: https://medium.com/p/9f252b7b4a7a/
+
+![Photo by wild vibez on Unsplash](article-images/wild-vibez-317184-unsplash.jpg)
+
 # About imposters and doubles
 
-Well into the project, with the deadline looming,in the middle of the sprint, and you have half or more of your team browsing the internet because some upstream system is down and no development/testing/showcase can be done.
+Well into the project, with the deadline looming, in the middle of the sprint, and you have half or more of your team browsing the internet because some upstream system is down and no development/testing/showcase can be done.
 
 If you are part of a high performant team, that have all their microservices architecture and pipelines working this kind of problem probably does not occur to you. 
 
@@ -34,7 +38,7 @@ Forget about asking a developer to craft manually hundreds of lines of potential
 
 How to use it then?
 
-The documentation on their site is very nice, but it assumes a lot of knowlegde, so for the remainder of this article, I will show how to set it up with a sample API and also compare it with stubby4j.
+The documentation on their site is very nice, but it assumes a lot of knowledge, so for the remainder of this article, I will show how to set it up with a sample API and also compare it with stubby4j.
 
 ## hands on stuff
 
