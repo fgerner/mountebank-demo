@@ -36,9 +36,11 @@ The more you use __Mountebank__ as a proxy to your application the better your _
 
 Forget about asking a developer to craft manually hundreds of lines of potential responses or worse multiline RegExps that nobody would like to maintain.
 
+Not only that, but __Mountebank__ allows you to record all these imposters as a config file and you can start it anytime with this set of preconfigured _doubles_.
+
 How to use it then?
 
-The documentation on their site is very nice, but it assumes a lot of knowledge, so for the remainder of this article, I will show how to set it up with a sample API and also compare it with stubby4j.
+The documentation on their site is very nice, but it assumes a lot of knowledge, so for the remainder of this article, I will show how to set it up with a sample API and also compare it with _stubby4j_.
 
 ## hands on stuff
 
@@ -51,7 +53,7 @@ You will also need:
 * cURL installed in your terminal
 * Java (optional, for stubby4j only)
 * NodeJS (optional, if you don't want to use Docker)
-* [Postman](http://getpostman.com) (optional)
+* [Postman](https://www.getpostman.com/) (optional)
 
 Assuming you have cloned the repo to the following location:
 
