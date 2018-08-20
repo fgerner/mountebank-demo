@@ -1,3 +1,23 @@
+/**
+ * This is a sample form implemented in nodeJS, it exposes the following endpoints:
+ *  - method GET: 
+ *    http://localhost:8124/
+ *    Presents a simple form with few fields and a submit button
+ * 
+ *    http://localhost:8124/favicon.ico
+ *    If hit directly, this endpoint returns a 404 status error
+ * 
+ *  - method POST:
+ *    http://localhost:8124/inbound
+ *    This endpoint handles the previous form submission displaying the values submitted and a thank you message.
+ * 
+ *  - any other method returns a 405 status code error
+ * 
+ *  To run it simply run the following command at the root of this file:
+ *  $ node server.js
+ * 
+ *  Taken without modifications from: https://stackoverflow.com/questions/15427220/how-to-handle-post-request-in-node-js#19183959
+ */
 var http = require('http');
 var qs = require('querystring');
 var formOutput = '<html><body>'
