@@ -45,15 +45,38 @@ You can install it as a chrome app, but they advice that this method will be dep
 *   chrome app: [chrome web app](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) 
 *   native app: https://www.getpostman.com/apps
 
-### Contents
+With Postman you can create GET or POST requests to the endpoints describe below in this article, if you prefer not to use cURL.
 
-*   form/server.js: __nodeJS__ server that presents a local form , taken from: https://stackoverflow.com/questions/15427220/how-to-handle-post-request-in-node-js#19183959
+For example, once you have the api from this repo running locally on port 8125, you can create a POST request like it is shown in this image:
 
-* api/api.js: also a simpler nodeJS set of endpoints to allow interactions to practice with Mountebank.
-    * GET endpoint: /api/customers
-    * POST endpoint: /api/create-customer
+![POST request in Postman](article-images/postman-post-request-example.png)
 
-*   Dockerfile: image to run server.js in [Docker](https://www.docker.com/)
+Paste a JSON customer like the one shown and If you press the "SEND" button, you should see the following response:
+
+![POST response in Postman](article-images/postman-post-response-example.png)
+
+### Contents of the repository
+
+*   __form/server.js__: __nodeJS__ server that presents a local form , taken from: https://stackoverflow.com/questions/15427220/how-to-handle-post-request-in-node-js#19183959
+    *   method GET: 
+        http://localhost:8124/
+        Presents a simple form with few fields and a submit button
+    *   http://localhost:8124/favicon.ico
+        If hit directly, this endpoint returns a 404 status error
+    *   method POST:
+        http://localhost:8124/inbound
+        This endpoint handles the previous form submission displaying the values submitted and a thank you message.
+    *   any other method returns a 405 status code error
+
+* __api/api.js__: also a simpler nodeJS set of endpoints to allow interactions to practice with Mountebank.
+    *   http://localhost:8125/api/customers
+        Returns a fixed json object with two customers to be used via a simple GET request.
+    *   http://localhost:8125/api/create-customer
+        Receives a POST request and returns a json object with the success message
+    *   http://localhost:8125/
+        Displays a simple html page
+
+*   __Dockerfile__: image to run server.js in [Docker](https://www.docker.com/)
 
 
 ### running the app
@@ -61,6 +84,8 @@ You can install it as a chrome app, but they advice that this method will be dep
 1.   without installing __nodeJS__ and using __docker-compose__
 
 ```docker-compose up --build```
+
+This installs and exposes the two different applications described in the Contents section
 
 1.  if you don't have/want to use docker and have __nodeJS__ installed:
 
