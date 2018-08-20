@@ -13,7 +13,8 @@
  * 
  *  - any other method returns a 405 status code error
  * 
- *  To run it simply run the following command at the root of this file:
+ *  To run it simply run the following command at the root of this file (will start 
+ *  by default on port 8124 but you can change it easily with the variable serverPort):
  *  $ node server.js
  * 
  *  Taken without modifications from: https://stackoverflow.com/questions/15427220/how-to-handle-post-request-in-node-js#19183959

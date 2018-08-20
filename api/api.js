@@ -1,3 +1,23 @@
+/**
+ * This simple javascript file allows to stand a simple api to do local development.
+ * 
+ * Requires nodeJS.
+ * 
+ * Endpoints:
+ *  - http://localhost:8125/api/customers
+ *    Returns a fixed json object with two customers to be used via a simple GET request.
+ * 
+ *  - http://localhost:8125/create-customer
+ *    Receives a POST request and returns a json object with the success message
+ * 
+ *  - http://localhost:8125/
+ *    Displays a simple html page
+ * 
+ *  To run it simply run the following command at the root of this file (will start 
+ *  by default on port 8125 but you can change it easily with the variable serverPort):
+ *  $ node server.js
+ */
+
 const http = require("http");
 const fs = require("fs");
 const qs = require("querystring");
