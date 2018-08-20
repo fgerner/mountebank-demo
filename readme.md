@@ -11,6 +11,10 @@ This demo will allow to stand up a simple application then record some tests and
 Read this article for instructions on how to use this repo with Mountebank: https://medium.com/p/9f252b7b4a7a/
 (locally: [article](blog-post.md))
 
+The goal of the article is to stand up an api and record some hits to its endpoints with Mountebank 
+as a proxy, then shut down the api and hit the endpoints using Mountebank port and see how Mountebank
+has created an imposter for the original api.
+
 ### Installing pre-requisites
 
 #### Installing mountebank

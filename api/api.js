@@ -7,7 +7,7 @@
  *  - http://localhost:8125/api/customers
  *    Returns a fixed json object with two customers to be used via a simple GET request.
  * 
- *  - http://localhost:8125/create-customer
+ *  - http://localhost:8125/api/create-customer
  *    Receives a POST request and returns a json object with the success message
  * 
  *  - http://localhost:8125/
